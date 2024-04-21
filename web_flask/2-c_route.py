@@ -22,7 +22,7 @@ def hello2():
 @app.route('/c/<text>', strict_slashes=False)
 def hello_dynamic(text):
     """Display dynamic text """
-    text.replace('-', ' ')
+    text.replace('_', ' ')
     return 'C {}'.format(text)
 
 
