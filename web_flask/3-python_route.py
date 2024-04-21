@@ -26,6 +26,7 @@ def hello_dynamic(text):
     return 'C {}'.format(text)
 
 
+@app.route('/python/')
 @app.route('/python/<text>', strict_slashes=False)
 def dynamic2(text='is cool'):
     """ dynamic text"""
