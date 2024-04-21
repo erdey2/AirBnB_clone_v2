@@ -27,8 +27,7 @@ def hello_dynamic(text):
 
 
 @app.route('/python/<text>', strict_slashes=False)
-def dynamic2(text):
-    text = 'is cool'
+def dynamic2(text='is cool'):
     text = text.replace('_', ' ')
     return 'Python {}'.format(text)
 
