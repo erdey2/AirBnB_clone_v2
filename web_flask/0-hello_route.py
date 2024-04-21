@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 """start flask app"""
+
 from flask import Flask
+
 app = Flask(__name__)
 
 
-@app.route = "/"
+@app.route = ('/', strict_slashes=False)
 """Landing page"""
 
 
