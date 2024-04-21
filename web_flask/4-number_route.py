@@ -36,7 +36,7 @@ def dynamic2(text='is cool'):
 
 @app.route('/number/<n>', strict_slashes=False)
 def number(n):
-    if type(n) is 'integer':
+    if type(n) is int:
         return '{} is a number'.format(n)
 
 
