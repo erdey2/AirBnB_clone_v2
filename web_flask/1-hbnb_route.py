@@ -12,6 +12,7 @@ def hello():
     """ landing page """
     return 'Hello HBNB!'
 
+
 @app.route('/hbnb', strict_slashes=False)
 def hello2():
     """display HBNB """
